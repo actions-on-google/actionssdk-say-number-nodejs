@@ -1,0 +1,32 @@
+{
+  "versionLabel": "1.0.0",
+  "agentInfo": {
+    "languageCode": "en-US",
+    "projectId": "hello",
+    "invocationNames": [
+      "Hello Action"
+    ],
+    "voiceName": "male_1",
+    "privateKey": "MY_SECRET_KEY"
+  },
+  "actions": [
+    {
+      "initialTrigger": {
+        "intent": "assistant.intent.action.MAIN"
+      },
+      "inDialogTriggers": [
+        {
+          "intent": "raw.input",
+          "queryPatterns": [
+            {
+              "query_pattern": "$SchemaOrg_Text:raw_text"
+            }
+          ]
+        }
+      ],
+      "httpExecution": {
+        "url": "YOUR_ENDPOINT_URL"
+      }
+    }
+  ]
+}
