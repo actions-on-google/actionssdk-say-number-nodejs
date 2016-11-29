@@ -3,9 +3,6 @@
   "agentInfo": {
     "languageCode": "en-US",
     "projectId": "hello",
-    "invocationNames": [
-      "Hello Action"
-    ],
     "voiceName": "male_1",
     "privateKey": "MY_SECRET_KEY"
   },
