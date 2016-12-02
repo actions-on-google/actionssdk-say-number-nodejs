@@ -31,13 +31,6 @@ app.post('/', function (request, response) {
   console.log('handle post');
   const assistant = new ActionsSdkAssistant({request: request, response: response});
 
-  if (assistant.isRequestFromAssistant('MY_SECRET_KEY')) {
-    console.log('Request is from assistant');
-  } else {
-    console.log('Request is NOT from assistant');
-    return;
-  }
-
   function mainIntent (assistant) {
     console.log('mainIntent');
     let inputPrompt = assistant.buildInputPrompt(true, '<speak>Hi! <break time="1"/> ' +

@@ -3,8 +3,7 @@
   "agentInfo": {
     "languageCode": "en-US",
     "projectId": "hello",
-    "voiceName": "male_1",
-    "privateKey": "MY_SECRET_KEY"
+    "voiceName": "male_1"
   },
   "actions": [
     {
