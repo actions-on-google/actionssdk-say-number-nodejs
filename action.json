@@ -10,16 +10,6 @@
       "initialTrigger": {
         "intent": "assistant.intent.action.MAIN"
       },
-      "inDialogTriggers": [
-        {
-          "intent": "raw.input",
-          "queryPatterns": [
-            {
-              "query_pattern": "$SchemaOrg_Text:raw_text"
-            }
-          ]
-        }
-      ],
       "httpExecution": {
         "url": "YOUR_ENDPOINT_URL"
       }
