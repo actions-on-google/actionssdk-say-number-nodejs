@@ -16,6 +16,8 @@ See the developer guide and release notes at [https://developers.google.com/acti
  1. Preview the action using the gactions CLI: ./gactions preview --invocation_name "hello action" --preview_mins 1234
  1. Use the gactions simulator to test the action (try "talk to hello action"): ./gactions simulate
 
+For more detailed information on deployment, see the [documentation](https://developers.google.com/actions/samples/).
+
 ## References and How to report bugs
 * Actions on Google documentation: [https://developers.google.com/actions/](https://developers.google.com/actions/).
 * If you find any issues, please open a bug here on GitHub.
