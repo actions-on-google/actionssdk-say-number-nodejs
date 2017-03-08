@@ -12,22 +12,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-// [START app]
 'use strict';
 
 process.env.DEBUG = 'actions-on-google:*';
 
-let ActionsSdkAssistant = require('actions-on-google').ActionsSdkAssistant;
-let express = require('express');
-let bodyParser = require('body-parser');
+const ActionsSdkAssistant = require('actions-on-google').ActionsSdkAssistant;
 
-let app = express();
-app.set('port', (process.env.PORT || 8080));
-app.use(bodyParser.json({type: 'application/json'}));
-
-app.post('/', function (request, response) {
-  console.log('handle post');
-  const assistant = new ActionsSdkAssistant({request: request, response: response});
+exports.sayNumber = (req, res) => {
+  const assistant = new ActionsSdkAssistant({request: req, response: res});
 
   function mainIntent (assistant) {
     console.log('mainIntent');
@@ -55,11 +47,4 @@ app.post('/', function (request, response) {
   actionMap.set(assistant.StandardIntents.TEXT, rawInput);
 
   assistant.handleRequest(actionMap);
-});
-
-// Start the server
-let server = app.listen(app.get('port'), function () {
-  console.log('App listening on port %s', server.address().port);
-  console.log('Press Ctrl+C to quit.');
-});
-// [END app]
+};

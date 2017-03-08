@@ -11,7 +11,8 @@ This sample shows how to create an action for the Google Assistant using the Act
 See the developer guide and release notes at [https://developers.google.com/actions/](https://developers.google.com/actions/) for more details.
 
 ### Steps
- 1. Deploy this app to your preferred hosting environment (we recommend Google App Engine).
+ 1. Deploy this app to your preferred hosting environment
+ (we recommend [Google Cloud Functions](https://cloud.google.com/functions/docs/tutorials/http)).
  1. Update the action package, action.json, with your endpoint URL.
  1. Preview the action using the gactions CLI: ./gactions preview --invocation_name "hello action" --preview_mins 1234
  1. Use the gactions simulator to test the action (try "talk to hello action"): ./gactions simulate
