@@ -10,8 +10,7 @@
   },
   "scripts": {
     "lint": "semistandard --fix \"**/*.js\"",
-    "start": "node app.js",
-    "monitor": "nodemon app.js",
+    "start": "functions deploy sayNumber --trigger-http",
     "deploy": "gcloud beta functions deploy sayNumber --trigger-http --stage-bucket <storage_bucket_name>",
     "test": "npm run lint"
   },
