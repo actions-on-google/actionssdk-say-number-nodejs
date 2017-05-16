@@ -1,18 +1,20 @@
 {
-  "versionLabel": "1.0.0",
-  "agentInfo": {
-    "languageCode": "en-US",
-    "projectId": "hello",
-    "voiceName": "male_1"
-  },
   "actions": [
     {
-      "initialTrigger": {
-        "intent": "assistant.intent.action.MAIN"
+      "description": "Default Welcome Intent",
+      "name": "MAIN",
+      "fulfillment": {
+        "conversationName": "conversation_1"
       },
-      "httpExecution": {
-        "url": "YOUR_ENDPOINT_URL"
+      "intent": {
+        "name": "actions.intent.MAIN"
       }
     }
-  ]
+  ],
+  "conversations": {
+    "conversation_1": {
+      "name": "conversation_1",
+      "url": "YOUR_ENDPOINT_URL"
+    }
+  }
 }
