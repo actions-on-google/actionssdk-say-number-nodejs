@@ -1,4 +1,4 @@
-# Actions On Google Actions SDK Sample using Node.js
+# Actions On Google: Actions SDK Sample using Node.js
 
 This sample shows how to create an app for the Google Assistant using the Actions SDK.
 
