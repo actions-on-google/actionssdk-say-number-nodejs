@@ -17,7 +17,7 @@ This sample shows how to create an app for the Google Assistant using the Action
 1. Open the Simulator in the Actions console.
 1. Type "Talk to my test app" in the simulator, or say "OK Google, talk to my test app" to any Actions on Google enabled device signed into your developer account.
 
-For more detailed information on deployment, see the [documentation](https://developers.google.com/actions/samples/).
+For more detailed information on deployment, see the [documentation](https://developers.google.com/actions/sdk/deploy-fulfillment).
 
 ## References and How to report bugs
 * Actions on Google documentation: [https://developers.google.com/actions/](https://developers.google.com/actions/).
