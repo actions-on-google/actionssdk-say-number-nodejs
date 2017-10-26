@@ -14,7 +14,8 @@
   "conversations": {
     "conversation_1": {
       "name": "conversation_1",
-      "url": "YOUR_ENDPOINT_URL"
+      "url": "YOUR_ENDPOINT_URL",
+      "fulfillmentApiVersion": 2
     }
   }
 }
