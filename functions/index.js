@@ -33,4 +33,4 @@ app.intent('actions.intent.TEXT', (conv, input) => {
     `<say-as interpret-as="ordinal">${input}</say-as></speak>`);
 });
 
-exports.sayNumber = functions.https.onRequest(app);
+exports.webhook = functions.https.onRequest(app);
