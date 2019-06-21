@@ -20,17 +20,21 @@ const {actionssdk} = require('actions-on-google');
 const app = actionssdk({debug: true});
 
 app.intent('actions.intent.MAIN', (conv) => {
-  conv.ask('<speak>Hi! <break time="1"/> ' +
-    'I can read out an ordinal like ' +
+  conv.ask('<speak>Hi! <break time="1"/> I can read out an ordinal like ' +
     '<say-as interpret-as="ordinal">123</say-as>. Say a number.</speak>');
 });
 
+app.intent('raw.input', (conv, input) => {
+  const number = conv.arguments.get('ordinal');
+  conv.ask(`<speak>You said, <say-as interpret-as="ordinal">${number}</say-as></speak>`);
+});
+
+//Handles in-dialog conversation
 app.intent('actions.intent.TEXT', (conv, input) => {
   if (input === 'bye') {
     return conv.close('Goodbye!');
   }
-  conv.ask('<speak>You said, ' +
-    `<say-as interpret-as="ordinal">${input}</say-as></speak>`);
+  conv.ask(`<speak>You said, <say-as interpret-as="ordinal">${input}</say-as></speak>`);
 });
 
 exports.webhook = functions.https.onRequest(app);

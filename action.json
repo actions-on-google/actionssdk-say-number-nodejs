@@ -4,18 +4,43 @@
       "description": "Default Welcome Intent",
       "name": "MAIN",
       "fulfillment": {
-        "conversationName": "conversation_1"
+        "conversationName": "convWelcome"
       },
       "intent": {
         "name": "actions.intent.MAIN"
       }
+    },
+    {
+      "description": "Say SSML Response",
+      "name": "Raw Input",
+      "fulfillment": {
+        "conversationName": "rawInput"
+      },
+      "intent": {
+        "name": "raw.input",
+        "parameters": [{
+          "name": "ordinal",
+          "type": "org.schema.type.Number"
+          }],
+        "trigger": {
+          "queryPatterns": [
+            "$org.schema.type.Number:ordinal",
+            "$org.schema.type.Number:ordinal right now",
+            "find out about $org.schema.type.Number:ordinal specifically",
+            "hear about $org.schema.type.Number:ordinal"
+          ]
+        }
+      }
     }
   ],
   "conversations": {
-    "conversation_1": {
-      "name": "conversation_1",
+    "convWelcome": {
+      "name": "convWelcome",
       "url": "YOUR_ENDPOINT_URL",
-      "fulfillmentApiVersion": 2
+    },
+    "rawInput": {
+      "name": "rawInput",
+      "url":"YOUR_ENDPOINT_URL",
     }
   }
 }
