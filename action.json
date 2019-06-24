@@ -36,11 +36,11 @@
   "conversations": {
     "convWelcome": {
       "name": "convWelcome",
-      "url": "YOUR_ENDPOINT_URL",
+      "url": "YOUR_ENDPOINT_URL"
     },
     "rawInput": {
       "name": "rawInput",
-      "url":"YOUR_ENDPOINT_URL",
+      "url":"YOUR_ENDPOINT_URL"
     }
   }
 }
