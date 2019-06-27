@@ -14,7 +14,7 @@ This sample demonstrates how to create an Action for the Google Assistant -- usi
 
 ### Configuration
 #### Actions Console
-1. From the [Actions on Google Console](https://console.actions.google.com/), add a new project (this will become your *Project ID*) > **Create Project** > under **More options** select **Actions SDK** > keep the **Use Actions SDK to add Actions** window open, will revisit in a later step.
+1. From the [Actions on Google Console](https://console.actions.google.com/), new project (this will become your *Project ID*) > **Create project** > under **More options** select **Actions SDK** > keep the **Use Actions SDK to add Actions** window open, will revisit in a later step.
 
 #### Firebase Deployment
 1. On your local machine, in the `functions` directory, run `npm install`
@@ -25,7 +25,7 @@ This sample demonstrates how to create an Action for the Google Assistant -- usi
 1. Update the action package, `action.json`, replacing the placeholder value `YOUR_ENDPOINT_URL` with the value for Function URL obtained from the previous step.
 1. From the top level directory in this sample, run `gactions update --action_package action.json --project {PROJECT_ID}` with your *Project ID*.
 1. Back in the [Actions console](https://console.actions.google.com), from the pop up window > select **OK**.
-1. From the left menu under **Test** > select **Simulator** to open the Actions on Google simulator then say or type `Talk to my test app`.
+1. From the left menu click **Test** to open the Actions on Google simulator then say or type `Talk to my test app`.
 
 ### Running this Sample
 + You can test your Action on any Google Assistant-enabled device on which the Assistant is signed into the same account used to create this project. Just say or type, “OK Google, talk to my test app”.
