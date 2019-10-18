@@ -1,6 +1,6 @@
 # Actions On Google: Actions SDK Sample
 
-This sample demonstrates how to create an Action for the Google Assistant -- using [Actions SDK](https://developers.google.com/actions/sdk/) in Node.js and deployed on [Cloud Functions for Firebase](https://firebase.google.com/docs/functions/).
+This sample demonstrates how to create an Action for the Google Assistant -- using [Actions SDK](https://developers.google.com/assistant/actions/actions-sdk/) in Node.js and deployed on [Cloud Functions for Firebase](https://firebase.google.com/docs/functions/).
 
 ## Setup Instructions
 ### Prerequisites
@@ -9,7 +9,7 @@ This sample demonstrates how to create an Action for the Google Assistant -- usi
 1. Install the [Firebase Functions CLI](https://firebase.google.com/docs/functions/get-started#set_up_and_initialize_functions_sdk)
     + We recommend using version 6.5.0, `npm install -g firebase-tools@6.5.0`
     + Run `firebase login` with your Google account
-1. [Install the gactions CLI](https://developers.google.com/actions/tools/gactions-cli)
+1. [Install the gactions CLI](https://developers.google.com/assistant/tools/gactions-cli)
     + You may need to grant execute permission, ‘chmod +x ./gactions’
 
 ### Configuration
@@ -32,9 +32,9 @@ This sample demonstrates how to create an Action for the Google Assistant -- usi
 + You can also use the Actions on Google Console simulator to test most features and preview on-device behavior.
 
 ## References & Issues
-+ Questions? Go to [StackOverflow](https://stackoverflow.com/questions/tagged/actions-on-google), [Assistant Developer Community on Reddit](https://www.reddit.com/r/GoogleAssistantDev/) or [Support](https://developers.google.com/actions/support/).
++ Questions? Go to [StackOverflow](https://stackoverflow.com/questions/tagged/actions-on-google), [Assistant Developer Community on Reddit](https://www.reddit.com/r/GoogleAssistantDev/) or [Support](https://developers.google.com/assistant/support).
 + For bugs, please report an issue on Github.
-+ Actions on Google [Documentation](https://developers.google.com/actions/extending-the-assistant)
++ Actions on Google [Documentation](https://developers.google.com/assistant)
 + Actions on Google [Codelabs](https://codelabs.developers.google.com/?cat=Assistant).
 
 ## Make Contributions
