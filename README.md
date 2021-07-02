@@ -1,5 +1,7 @@
 # Actions On Google: Actions SDK Sample
 
+:warning: This code sample was built using the legacy Actions SDK. We now recommend using [Actions Builder or the new Actions SDK](https://developers.google.com/assistant/conversational/overview) to develop, test, and deploy Conversational Actions.
+
 This sample demonstrates how to create an Action for the Google Assistant -- using [Actions SDK](https://developers.google.com/assistant/actions/actions-sdk/) in Node.js and deployed on [Cloud Functions for Firebase](https://firebase.google.com/docs/functions/).
 
 ## Setup Instructions
